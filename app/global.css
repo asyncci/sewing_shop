@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --rich-black: #01161eff;
+    --midnight-green: #124559ff;
+    --air-force-blue: #598392ff;
+    --ash-gray: #aec3b0ff;
+    --beige: #eff6e0ff;
+
+    --sky: rgb(13, 159, 216);
+
+    --main: var(--rich-black);
+    --accent: var(--midnight-green);
+    --third: var(--beige);
+    background-color: rgb(1, 28, 40);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Jost';
+    margin: 0;
+}
+
+
+#main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+#top {
+    background-image: radial-gradient(rgba(32, 32, 38, 0), rgba(9, 6, 12, 0.345)),
+    url('assets/fabric-light.jpg');
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    background-color: transparent;
+    z-index: 1001;
+    position: absolute;
+}
+
+#navbar h1 {
+    margin: 20px;
+    color: var(--beige);
+    font-weight: 200;
+    border-radius: 4px;
+}
+
+#card {
+    margin: 100px 0;
+    border-radius: 10px;
+    width: 70%;
+}
+
+#card h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#card #description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#card #detail {
+    background-color: gold;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#button {
+    font-weight: 500;
+    font-size: 20px;
+    border: 0;
+    border-radius: 100px;
+    padding: 10px;
+    background-color: white;
+    transition: 0.24s;
+}
+#button:hover {
+    background-color: var(--rich-black);
+    color: white;
+}
+
+#button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#detail {
+    display: flex;
+}
+
+#detail * {
+    color: var(--main);
+}
+
+#detail > * {
+    margin: 20px;
+}
+
+#detail h2 {
+    font-size: 40px;
+}
+#detail h4 {
+    font-size: 20px;
+}
+
+.shadow-fly {
+    margin: 50px 20px;
+    box-shadow: 0 0 10px 5px rgba(17, 17, 17, 0.551);
+}
+
+#middle {
+    padding: 40px 100px;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    margin: 50px 20px;
+}
+
+#middle #inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 100px
+}
+
+#middle #second-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#middle h1 {
+    color: white;
+    font-size: 60px;
+    font-variant-caps: all-petite-caps;
+    text-align: left;
+    margin: 0;
+}
+
+#middle p {
+    color: white;
+}
+
+#horizontal-line {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+
+#middle #carousel {
+    width: 500px;
+    height: 500px;
+    background-color: var(--rich-black);
+}
+
+
+#categories {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#categories #wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(112, 231, 255);
+    border-radius: 10px;
+    animation: color 5s ease-in-out infinite;
+}
+
+@keyframes color {
+    0% {
+        background-color: rgb(5, 70, 98);
+    }
+    50% {
+        background-color: rgb(34, 146, 195);
+    }
+    100% {
+        background-color: rgb(5, 70, 98);
+    }
+}
+
+
+#categories h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 25px;
+    color: rgb(255, 255, 255);
+}
+
+#categories .list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 40px ;
+}
+
+#categories h2 {
+    background-color: aliceblue;
+    border-radius: 40px;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+
+#categories h2:hover {
+    background-color: gold;
+}
+
+
+
+
+/* catalog area */
+
+
+#workflow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#workflow #wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+#workflow h1 {
+    color: white;
+}
+
+#workflow #wrapper #inner {
+    flex-basis: 20%;
+}
+
+#workflow #wrapper #second-inner {
+    flex-basis: 60%;
+}
+

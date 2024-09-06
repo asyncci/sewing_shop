@@ -5,7 +5,14 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import "./tailwind.css";
+import { LinksFunction } from "@remix-run/node";
+import globalStyles from "./global.css?url";
+import Navbar from "./components/navbar";
+import { ConfigProvider } from "antd";
+
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: globalStyles },
+];
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -26,5 +33,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <>
+        <Navbar />
+        <Outlet />
+    </>
+  )
 }
