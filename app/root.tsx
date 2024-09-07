@@ -8,9 +8,10 @@ import {
 import { LinksFunction } from "@remix-run/node";
 import globalStyles from "./global.css?url";
 import Navbar from "./components/navbar";
-import { ConfigProvider } from "antd";
+import stylesheet from "~/tailwind.css?url";
 
 export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: stylesheet },
   { rel: "stylesheet", href: globalStyles },
 ];
 

@@ -1,4 +1,3 @@
-import { Carousel, ConfigProvider } from "antd";
 import { Line } from "../components/horizontalLine";
 
 const images = [
@@ -17,7 +16,7 @@ export default function MiddleDescription() {
                     Мы предлагаем : полный цикл производства, начиная от разработки дизайна, брендирования и заканчивая готовой продукцией.</p>
             </div>
             <div id='second-inner'>
-
+{/* 
 
                 <ConfigProvider theme={{
                     components: {
@@ -36,7 +35,7 @@ export default function MiddleDescription() {
                             })
                         }
                     </Carousel>
-                </ConfigProvider>
+                </ConfigProvider> */}
             </div>
         </div>
     )
